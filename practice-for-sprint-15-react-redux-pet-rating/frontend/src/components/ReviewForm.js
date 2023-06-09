@@ -16,10 +16,10 @@ const ReviewForm = ({ review, formType, onSubmit, closeForm }) => {
     closeForm();
   };
 
-  const onChange = (e) => {
-    const number = e.target.value;
-    setRating(parseInt(number));
+  const onChange = (num) => {
+    setRating(parseInt(num));
   };
+
 
   return (
     <form onSubmit={handleSubmit} >

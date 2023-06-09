@@ -5,14 +5,15 @@ const PawsRatingInput = ({ rating, disabled, onChange }) => {
 
     return (
         <>
-            <input
+            {/* <input
                 type="number"
                 disabled={disabled}
                 value={rating}
                 onChange={onChange}
-            />
+            /> */}
             <div className="rating-input">
                 <div
+                    onClick={() => onChange(1)}
                     onMouseEnter={() => {
                         if (!disabled) setActiveRating(1);
                     }}
@@ -24,6 +25,7 @@ const PawsRatingInput = ({ rating, disabled, onChange }) => {
                     <i className="fa fa-paw"></i>
                 </div>
                 <div
+                    onClick={() => onChange(2)}
                     onMouseEnter={() => {
                         if (!disabled) setActiveRating(2);
                     }}
@@ -35,6 +37,7 @@ const PawsRatingInput = ({ rating, disabled, onChange }) => {
                     <i className="fa fa-paw"></i>
                 </div>
                 <div
+                    onClick={() => onChange(3)}
                     onMouseEnter={() => {
                         if (!disabled) setActiveRating(3);
                     }}
@@ -46,6 +49,7 @@ const PawsRatingInput = ({ rating, disabled, onChange }) => {
                     <i className="fa fa-paw"></i>
                 </div>
                 <div
+                    onClick={() => onChange(4)}
                     onMouseEnter={() => {
                         if (!disabled) setActiveRating(4);
                     }}
@@ -57,6 +61,7 @@ const PawsRatingInput = ({ rating, disabled, onChange }) => {
                     <i className="fa fa-paw"></i>
                 </div>
                 <div
+                    onClick={() => onChange(5)}
                     onMouseEnter={() => {
                         if (!disabled) setActiveRating(5);
                     }}
